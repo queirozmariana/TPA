@@ -1,20 +1,19 @@
 package com.mycompany.aulamatrizes;
+import java.util.Scanner;
 public class AulaMatrizes {
 
     public static void main(String[] args) {
-        
-    int [][]matrizNum = {
-        {1,2,3,4},
-        {5,6,7,8},
-        {9,10,11,12}
+        Scanner escaneador = new Scanner(System.in);
+    String [][]myMatriz = {
+        {"Nome","Nota1","Nota2","Média"},
+        {"Julia","6.0","10.0","8.0"},
+        {"Claudia","7.0","8.0","7.5"}
     }
     ;
     System.out.printf("OS VALORES DE SUA MATRIZ\n");
-    for(int i = 0;i< matrizNum.length; i++){
-        for (int j = 0; j<matrizNum[i].length; j++){
-             System.out.printf("| %-3d ", matrizNum[i][j]);
-
-             
+    for(int i = 0;i< myMatriz.length; i++){
+        for (int j = 0; j<myMatriz[i].length; j++){
+             System.out.printf("| %-7s ", myMatriz[i][j]);
         }
     System.out.printf("\n");
     }
